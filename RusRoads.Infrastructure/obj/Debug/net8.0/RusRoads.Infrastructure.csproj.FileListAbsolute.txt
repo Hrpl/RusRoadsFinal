@@ -1,0 +1,17 @@
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\bin\Debug\net8.0\RusRoads.Infrastructure.deps.json
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\bin\Debug\net8.0\RusRoads.Infrastructure.runtimeconfig.json
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\bin\Debug\net8.0\RusRoads.Infrastructure.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\bin\Debug\net8.0\RusRoads.Infrastructure.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\bin\Debug\net8.0\RusRoads.Domen.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\bin\Debug\net8.0\RusRoads.Domen.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.AssemblyInfo.cs
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.F0E1DA51.Up2Date
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\refint\RusRoads.Infrastructure.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\RusRoads.Infrastructure.genruntimeconfig.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Infrastructure\obj\Debug\net8.0\ref\RusRoads.Infrastructure.dll

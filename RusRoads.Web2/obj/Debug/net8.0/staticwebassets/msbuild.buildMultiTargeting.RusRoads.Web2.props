@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RusRoads.Web2.props" />
+</Project>

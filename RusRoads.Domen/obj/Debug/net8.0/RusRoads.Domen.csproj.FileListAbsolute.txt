@@ -1,0 +1,11 @@
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\bin\Debug\net8.0\RusRoads.Domen.deps.json
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\bin\Debug\net8.0\RusRoads.Domen.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\bin\Debug\net8.0\RusRoads.Domen.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\RusRoads.Domen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\RusRoads.Domen.AssemblyInfoInputs.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\RusRoads.Domen.AssemblyInfo.cs
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\RusRoads.Domen.csproj.CoreCompileInputs.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\RusRoads.Domen.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\refint\RusRoads.Domen.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\RusRoads.Domen.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Domen\obj\Debug\net8.0\ref\RusRoads.Domen.dll

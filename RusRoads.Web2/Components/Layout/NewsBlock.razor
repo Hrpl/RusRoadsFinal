@@ -1,0 +1,89 @@
+﻿@rendermode InteractiveServer
+@using System.Net.Http.Headers
+@using RusRoads.Web2.Services
+@using System.Linq;
+@using System.Collections.Generic;
+
+<div class="bg-success p-1 mt-2">
+
+    <SearchWindow Search="Search" SearchString="SearchString"></SearchWindow>
+
+    <span class="row">
+        <button class="btn col-5 m-2" @onclick="@FilterOnOut">Внешнии</button>
+        <button class="btn col-5 m-2" @onclick="@FilterOnIn">Внутренни</button>
+    </span>
+
+    @if (App.ListNews != null)
+    {
+        @foreach (var news in App.ListNews)
+        {
+            <div class="bg-green text-light m-1 p-1">
+                <span>@news.Title</span>
+            </div>
+        }
+    }
+
+</div>
+
+
+
+@code {
+
+    HttpClient httpClient = new HttpClient();
+    List<News>? localListNews = null;
+    List<News>? filterListNews = null;
+
+    public string SearchString { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+
+        InvokeAsync(StateHasChanged);
+
+    }
+
+    public void FilterOnIn()
+    {
+        var temp = ParsingService.PasrsingXml(App.SelectDate);
+
+        temp = temp.Where(n => n.Type == "in").ToList();
+
+        App.ListNews = temp;
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void FilterOnOut()
+    {
+        var temp = ParsingService.PasrsingXml(App.SelectDate);
+
+        temp = temp.Where(n => n.Type == "out").ToList();
+
+        App.ListNews = temp;
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Search(string s)
+    {
+        var temp = ParsingService.PasrsingXml(App.SelectDate);
+
+        temp = temp.Where(n => n.Title.Contains(s)).ToList();
+
+        List<News> l = new List<News>();
+
+        foreach (var item in App.ListNews)
+        {
+            foreach (var item2 in temp)
+            {
+                if(item.Title == item2.Title)
+                {
+                    l.Add(item);
+                    break;
+                }
+            }
+        }
+        App.ListNews = l;
+
+    }
+}

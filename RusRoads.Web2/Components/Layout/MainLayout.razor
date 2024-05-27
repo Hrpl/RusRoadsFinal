@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+
+<div class="container-fluid">
+
+    <header>
+        <TopMenu />
+    </header>
+
+    <div class="row ">
+        <div class="col-2 ps-0 mt-2 ms-3">
+            <Sidebar></Sidebar>
+        </div>
+
+        <div class="col-7">
+            @Body
+        </div>
+
+        <div class="col-2 mt-2 pe-0 ms-3">
+
+            <NewsBlock></NewsBlock>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+@code {
+
+}

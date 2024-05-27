@@ -1,0 +1,16 @@
+﻿<div style="background-color: darkslategrey">
+    <input class="m-1 col-9" type="text" @oninput=" (ChangeEventArgs e) => Search.InvokeAsync(e.Value.ToString())" />
+
+    <btn class="bi bi-search col-2 align-content-center text-light btn"></btn>
+</div>
+
+
+@code {
+    [Parameter]
+    public string SearchString { get; set; }
+
+    [Parameter]
+    public EventCallback<string> Search { get; set; }
+
+
+}

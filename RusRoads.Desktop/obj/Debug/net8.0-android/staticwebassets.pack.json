@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.Desktop\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\RusRoads.Desktop.styles.css",
+      "PackagePath": "staticwebassets\\RusRoads.Desktop.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.Desktop\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.Desktop\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.Desktop\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.Desktop\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.Desktop\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.RusRoads.Desktop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.RusRoads.Desktop.props",
+      "PackagePath": "build\\RusRoads.Desktop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.RusRoads.Desktop.props",
+      "PackagePath": "buildMultiTargeting\\RusRoads.Desktop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.RusRoads.Desktop.props",
+      "PackagePath": "buildTransitive\\RusRoads.Desktop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

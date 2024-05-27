@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vaxtDZ8PTklkWObpBTRuBnwPxHLsa6tFT4FEAtkEZ4i0BD3FNwzJ9L4bcuiSgGW5yLmTs6h42eU5a1jQNtwOoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Денис\\Desktop\\RusRoads\\RusRoads.NewsTest\\RusRoads.NewsTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Денис\\.nuget\\packages\\system.servicemodel.syndication\\8.0.0\\system.servicemodel.syndication.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

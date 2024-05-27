@@ -1,0 +1,146 @@
+﻿<style>
+    section {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    section > div {
+        border: 1px solid black;
+    }
+
+        section > div > button {
+            width: 100%; /* Занимает всю ширину родительского элемента */
+            height: 100%; /* Занимает всю высоту родительского элемента */
+            display: flex; /* Использует flexbox для центрирования содержимого */
+            justify-content: center; /* Центрирует содержимое по горизонтали */
+            align-items: center; /* Центрирует содержимое по вертикали */
+            text-align: center; /* Центрирует текст внутри кнопки */
+            border: none; /* Убирает границу кнопки */
+            background-color: transparent; /* Убирает фон кнопки */
+            font-size: 16px; /* Устанавливает размер шрифта */
+            cursor: pointer; /* Изменяет курсор на указатель при наведении */
+        }
+
+    .Holy {
+        width: 100%; /* Занимает всю ширину родительского элемента */
+        height: 100%; /* Занимает всю высоту родительского элемента */
+        display: flex; /* Использует flexbox для центрирования содержимого */
+        justify-content: center; /* Центрирует содержимое по горизонтали */
+        align-items: center; /* Центрирует содержимое по вертикали */
+        text-align: center; /* Центрирует текст внутри кнопки */
+        border: none; /* Убирает границу кнопки */
+        background-color: green; /* Убирает фон кнопки */
+        font-size: 16px; /* Устанавливает размер шрифта */
+        cursor: pointer; /* Изменяет курсор на указатель при наведении */
+    }
+</style>﻿
+
+@code {
+    string monthName = "";
+    int mouthNum;
+    int yearNum;
+    DateTime monthStart;
+    DateTime monthEnd;
+
+    [Parameter]
+    public DateTime SelectDate { get; set; } = DateTime.Now;
+
+    [Parameter]
+    public EventCallback<DateTime> OnSelectDateChanged { get; set; }
+
+    int NumberStratWeek;
+    int NumberEndWeek;
+    string[] Weeks = new string[] { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+
+    protected override void OnInitialized()
+    {
+        mouthNum = DateTime.Now.Month;
+        yearNum = DateTime.Now.Year;
+        CreateMouth();
+        HandleButtonClick(SelectDate);
+    }
+
+    private void CreateMouth()
+    {
+        monthStart = new DateTime(yearNum, mouthNum, 1);
+        monthEnd = monthStart.AddMonths(1).AddDays(-1);
+        monthName = monthStart.Month switch
+        {
+            1 => "Январь",
+            2 => "Февраль",
+            3 => "Март",
+            4 => "Апрель",
+            5 => "Май",
+            6 => "Июнь",
+            7 => "Июль",
+            8 => "Август",
+            9 => "Сентябрь",
+            10 => "Октябрь",
+            11 => "Ноябрь",
+            12 => "Декабрь",
+            _ => ""
+        };
+
+        NumberStratWeek = (int)monthStart.DayOfWeek;
+        if (NumberStratWeek == 0) NumberStratWeek = 7;
+        NumberEndWeek = (int)monthEnd.DayOfWeek;
+    }
+
+    private void AddMounth()
+    {
+        mouthNum++;
+        if (mouthNum > 12)
+        {
+            yearNum++;
+            mouthNum = 1;
+        }
+        CreateMouth();
+    }
+
+    private void MinusMounth()
+    {
+        mouthNum--;
+        if (mouthNum < 1)
+        {
+            yearNum--;
+            mouthNum = 12;
+        }
+        CreateMouth();
+    }
+
+    private void HandleButtonClick(DateTime newDate)
+    {
+        SelectDate = newDate;
+        OnSelectDateChanged.InvokeAsync(newDate);
+    }
+}
+
+<h1 class="d-inline">
+    <button class="btn" @onclick="MinusMounth">&lt;</button>
+    @monthName @yearNum
+    <button class="btn" @onclick="AddMounth">></button>
+</h1> 
+
+<section>
+    @for(int i = 0; i < 7; i++)
+    {
+        <div>@Weeks[i]</div>
+    }
+    @for (int i = 1; i < NumberStratWeek; i++)
+    {
+        <div></div>
+    }
+    @for (int i = monthStart.Day; i <= monthEnd.Day; i++)
+    {
+        var day = i;
+
+        <div><button @onclick="() => HandleButtonClick(new DateTime(yearNum, mouthNum, day))">@i</button></div>
+    }
+    @if (NumberEndWeek != 0)
+    {
+        for (int i = NumberEndWeek; i < 7; i++)
+        {
+            <div></div>
+        }
+    }
+</section>

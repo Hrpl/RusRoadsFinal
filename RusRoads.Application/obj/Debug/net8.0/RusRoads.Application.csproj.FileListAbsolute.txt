@@ -1,0 +1,17 @@
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Application.deps.json
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Application.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Application.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Domen.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Infrastructure.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Domen.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\bin\Debug\net8.0\RusRoads.Infrastructure.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.csproj.AssemblyReference.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.AssemblyInfoInputs.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.AssemblyInfo.cs
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.csproj.CoreCompileInputs.cache
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.27221FE7.Up2Date
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\refint\RusRoads.Application.dll
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\RusRoads.Application.pdb
+C:\Users\Денис\Desktop\RusRoads\RusRoads.Application\obj\Debug\net8.0\ref\RusRoads.Application.dll

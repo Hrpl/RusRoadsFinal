@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.Domen", "RusRoads.Domen\RusRoads.Domen.csproj", "{674F0A99-578F-4BDC-A13F-7F0077C870FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.Desktop", "RusRoads.Desktop\RusRoads.Desktop.csproj", "{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.API", "RusRoads.API\RusRoads.API.csproj", "{BAD74D92-9246-445F-8D52-201DE701C34D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.Application", "RusRoads.Application\RusRoads.Application.csproj", "{1F97EF6C-67B4-4B72-80A6-7F1F792BE4EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.Infrastructure", "RusRoads.Infrastructure\RusRoads.Infrastructure.csproj", "{B678BBA1-A2E9-442E-9187-E7BF0C47731C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.Web2", "RusRoads.Web2\RusRoads.Web2.csproj", "{55409087-C871-4EF9-BA40-DF8C0BA90CC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RusRoads.NewsTest", "RusRoads.NewsTest\RusRoads.NewsTest.csproj", "{CAFCFADD-A763-4172-9601-9A9F4CD11882}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{674F0A99-578F-4BDC-A13F-7F0077C870FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674F0A99-578F-4BDC-A13F-7F0077C870FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674F0A99-578F-4BDC-A13F-7F0077C870FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674F0A99-578F-4BDC-A13F-7F0077C870FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E24EA6E-3E8E-4026-9BC9-1CF3570C41E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BAD74D92-9246-445F-8D52-201DE701C34D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD74D92-9246-445F-8D52-201DE701C34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD74D92-9246-445F-8D52-201DE701C34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD74D92-9246-445F-8D52-201DE701C34D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F97EF6C-67B4-4B72-80A6-7F1F792BE4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F97EF6C-67B4-4B72-80A6-7F1F792BE4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F97EF6C-67B4-4B72-80A6-7F1F792BE4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F97EF6C-67B4-4B72-80A6-7F1F792BE4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B678BBA1-A2E9-442E-9187-E7BF0C47731C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B678BBA1-A2E9-442E-9187-E7BF0C47731C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B678BBA1-A2E9-442E-9187-E7BF0C47731C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B678BBA1-A2E9-442E-9187-E7BF0C47731C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55409087-C871-4EF9-BA40-DF8C0BA90CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55409087-C871-4EF9-BA40-DF8C0BA90CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55409087-C871-4EF9-BA40-DF8C0BA90CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55409087-C871-4EF9-BA40-DF8C0BA90CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAFCFADD-A763-4172-9601-9A9F4CD11882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFCFADD-A763-4172-9601-9A9F4CD11882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFCFADD-A763-4172-9601-9A9F4CD11882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFCFADD-A763-4172-9601-9A9F4CD11882}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2169EAD7-0B51-40B7-A752-E561ECF90D0D}
+	EndGlobalSection
+EndGlobal

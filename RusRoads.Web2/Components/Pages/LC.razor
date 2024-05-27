@@ -1,0 +1,79 @@
+﻿@page "/lc"
+@layout LCLayout
+
+<style>
+    .sticky {
+        position: sticky
+    }
+
+    .circle {
+        border-radius: 50%;
+        background-color: white;
+        height: 50px;
+        width: 50px;
+    }
+
+    .menu-element{
+        padding: 5px;
+    }
+
+    .menu-element:hover{
+        border: 1px solid black;
+        
+        border-radius: 8px;
+    }
+
+</style>
+
+<div class="d-flex">
+    <div class="d-flex flex-column">
+        <div class="nav-item col-1 circle align-content-center mt-2">
+            <img src="/favicon.png" class="circle" />
+        </div>
+
+        <ul style="list-style-type: none"> 
+            <li class="menu-element">
+                <span class="bi bi-gear"></span>
+                Раздел 1
+            </li>
+            <li class="menu-element">
+                <span class="bi bi-people " ></span>
+                Раздел 2
+            </li>
+            <hr />
+            <li class="menu-element">
+                <span class="bi bi-envelope "></span>
+                Сообщения
+            </li>
+            <li class="menu-element">
+                <span class="bi bi-folder "></span>
+                Файлы
+            </li>
+            <li class="menu-element">
+                <span class="bi bi-calendar "></span>
+                События
+            </li>
+        </ul>
+    </div>
+
+    <div class="d-flex flex-column ms-4 mt-2 p-0">
+        <div class="row">
+            <label class="col-2 my-2" for="name">Имя</label>
+            <input class="col-4 my-2" name="name" type="text" @bind="name" />
+
+            <label class="col-2 my-2" for="sur">Фамилия</label>
+            <input class="col-4 my-2" name="sur" type="text" @bind="surname" />
+
+            <label class="col-2 my-2" for="pat">Отчество</label>
+            <input class="col-4 my-2" name="pat" type="text" @bind="patr" />
+        </div>
+    </div>
+</div>
+
+@code {
+    string name = "Иван", surname = "Иванов", patr = "Иванович";
+    protected override void OnInitialized()
+    {
+        App.IsPage = "Личный кабинет";
+    }
+}

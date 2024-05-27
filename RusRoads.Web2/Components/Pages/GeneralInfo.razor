@@ -1,0 +1,78 @@
+﻿@page "/"
+@page "/generalinfo"
+@rendermode InteractiveServer
+@inject IJSRuntime js
+
+@using Microsoft.AspNetCore.SignalR.Client
+@using System.Net.Http
+@using RusRoads.Web2.Services;
+
+<Calendar OnSelectDateChanged="Event"></Calendar>
+
+<EditForm Model="news" OnSubmit="@Post" class="row">
+    <label class="col-3">Guid</label>
+    <input type="text" class="col-8 m-2 form-label" @bind="news.Guid" />
+
+    <label class="col-3">Title</label>
+    <input type="text" class="col-8 m-2 form-label" @bind="news.Title" />
+
+    <label class="col-3">Link</label>
+    <input type="text" class="col-8 m-2 form-label" @bind="news.Link" />
+
+    <label class="col-3">Description</label>
+    <input type="text" class="col-8 m-2 form-label" @bind="news.Description" />
+
+    <label class="col-3">Category</label>
+    <input type="text" class="col-8 m-2 form-label" @bind="news.Category" />
+
+    <label class="col-3">EmployeeGuid</label>
+    <input type="text" class="col-8 m-2 form-label" @bind="news.EmployeeGuid" />
+
+    <button type="submit" class="col-3">Submit</button>
+</EditForm>
+
+@code {
+    public void Event(DateTime date)
+    {
+        App.SelectDate = date;
+        App.ListNews = ParsingService.PasrsingXml(date);
+    }
+
+
+    HttpClient httpClient = new HttpClient();
+    News news = new News();
+
+    public async Task Post()
+    {
+        await httpClient.PostAsJsonAsync("http://192.168.0.11:5141/api/News/addNews", news);
+    }
+
+    List<string> ListMessage = new List<string>();
+    string message = "", name = "";
+
+    HubConnection connect;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        App.IsPage = "Общая корпоративная информация";
+
+        connect = new HubConnectionBuilder().WithUrl("http://192.168.0.11:5141/newsHub").Build();
+
+        connect.On<string>
+            ("Message", (message) =>
+            {
+                js.InvokeVoidAsync("alert", $"Добавлена новая новость: {message}");
+                InvokeAsync(StateHasChanged);
+            });
+
+        try
+        {
+            await connect.StartAsync();
+        }
+        catch (Exception ex)
+        {
+            ListMessage.Add($"Ошибка соединения");
+        }
+    }
+}

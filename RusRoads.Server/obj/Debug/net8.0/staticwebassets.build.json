@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZTo1IS9y36ztTC2PHnVnxqpXQWmjR2jFjzF/xpv1p6o=",
+  "Source": "RusRoads.Server",
+  "BasePath": "_content/RusRoads.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
